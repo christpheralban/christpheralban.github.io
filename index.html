@@ -1,0 +1,29 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="todoitem" type="text">
+    <ul id="items-box"></ul>
+    <button onclick="adder()"> 
+        Add Todo
+    </button>
+</body>
+
+<script>
+var todos = []
+
+function adder(){
+    var content = document.getElementById("items-box")
+   
+
+    todos.push(document.getElementById("todoitem").value)
+    content.innerHTML = todos.join('<br/>')
+
+}
+</script>
+</html>
